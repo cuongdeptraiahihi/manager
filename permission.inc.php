@@ -7,7 +7,7 @@
     $script = strpos($script, '/') !== false ? dirname($script) : null;
     $script = str_replace('\\', '/', $script);
 
-    define('IS_INSTALL_ROOT_DIRECTORY', $script == '.' || $script == '/');
+    define('IS_INSTALL_ROOT_DIRECTORY', false);
     define('IS_ACCESS_FILE_IN_FILE_MANAGER', defined('INDEX') && isset($_GET['not']));
     define('DIRECTORY_FILE_MANAGER', strpos($script, '/') !== false ? @substr($script, strrpos($script, '/') + 1) : null);
     define('PATH_FILE_MANAGER', str_replace('\\', '/', strtolower($_SERVER['DOCUMENT_ROOT'] . $script)));
