@@ -2,7 +2,7 @@
 
     define('ACCESS', true);
     define('INDEX', true);
-    define('IS_INSTALL_ROOT_DIRECTORY', true);
+    define('IS_INSTALL_ROOT_DIRECTORY', false);
 
     include_once 'function.php';
 
